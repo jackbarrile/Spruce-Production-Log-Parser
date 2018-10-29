@@ -40,34 +40,34 @@ class SpruceProductionLogParserTest {
     /* Positive tests */
     @Test
     fun testGetPageRankingByUniqueHits() {
-        val spruceProductionLoggerParser = SpruceProductionLogParser("src/test/resources/test.csv")
-        spruceProductionLoggerParser.readCsv()
-        Assert.assertEquals(3, spruceProductionLoggerParser.pageUniqueHitRanking.size)
-        Assert.assertEquals("/index.html", spruceProductionLoggerParser.pageUniqueHitRanking[0])
-        Assert.assertEquals("/index.jsp", spruceProductionLoggerParser.pageUniqueHitRanking[1])
-        Assert.assertEquals("/users.html", spruceProductionLoggerParser.pageUniqueHitRanking[2])
+        val spruceProductionLogParser = SpruceProductionLogParser("src/test/resources/test.csv")
+        spruceProductionLogParser.readCsv()
+        Assert.assertEquals(3, spruceProductionLogParser.pageUniqueHitRanking.size)
+        Assert.assertEquals("/index.html", spruceProductionLogParser.pageUniqueHitRanking[0])
+        Assert.assertEquals("/index.jsp", spruceProductionLogParser.pageUniqueHitRanking[1])
+        Assert.assertEquals("/users.html", spruceProductionLogParser.pageUniqueHitRanking[2])
     }
 
     @Test
     fun testGetPageRankingByNumOfUniqueUsers() {
-        val spruceProductionLoggerParser = SpruceProductionLogParser("src/test/resources/test.csv")
-        spruceProductionLoggerParser.readCsv()
-        Assert.assertEquals(3, spruceProductionLoggerParser.pageNumUniqueUsersRanking.size)
-        Assert.assertEquals("/index.html", spruceProductionLoggerParser.pageNumUniqueUsersRanking[0])
-        Assert.assertEquals("/index.jsp", spruceProductionLoggerParser.pageNumUniqueUsersRanking[1])
-        Assert.assertEquals("/users.html", spruceProductionLoggerParser.pageNumUniqueUsersRanking[2])
+        val spruceProductionLogParser = SpruceProductionLogParser("src/test/resources/test.csv")
+        spruceProductionLogParser.readCsv()
+        Assert.assertEquals(3, spruceProductionLogParser.pageNumUniqueUsersRanking.size)
+        Assert.assertEquals("/index.html", spruceProductionLogParser.pageNumUniqueUsersRanking[0])
+        Assert.assertEquals("/index.jsp", spruceProductionLogParser.pageNumUniqueUsersRanking[1])
+        Assert.assertEquals("/users.html", spruceProductionLogParser.pageNumUniqueUsersRanking[2])
     }
 
     @Test
     fun testGetUserRankingByUniquePageViews() {
-        val spruceProductionLoggerParser = SpruceProductionLogParser("src/test/resources/test.csv")
-        spruceProductionLoggerParser.readCsv()
-        Assert.assertEquals(5, spruceProductionLoggerParser.usersUniqueViewRanking.size)
-        Assert.assertEquals("user5", spruceProductionLoggerParser.usersUniqueViewRanking[0])
-        Assert.assertEquals("user1", spruceProductionLoggerParser.usersUniqueViewRanking[1])
-        Assert.assertEquals("user4", spruceProductionLoggerParser.usersUniqueViewRanking[2])
-        Assert.assertEquals("user3", spruceProductionLoggerParser.usersUniqueViewRanking[3])
-        Assert.assertEquals("user2", spruceProductionLoggerParser.usersUniqueViewRanking[4])
+        val spruceProductionLogParser = SpruceProductionLogParser("src/test/resources/test.csv")
+        spruceProductionLogParser.readCsv()
+        Assert.assertEquals(5, spruceProductionLogParser.usersUniqueViewRanking.size)
+        Assert.assertEquals("user5", spruceProductionLogParser.usersUniqueViewRanking[0])
+        Assert.assertEquals("user1", spruceProductionLogParser.usersUniqueViewRanking[1])
+        Assert.assertEquals("user4", spruceProductionLogParser.usersUniqueViewRanking[2])
+        Assert.assertEquals("user3", spruceProductionLogParser.usersUniqueViewRanking[3])
+        Assert.assertEquals("user2", spruceProductionLogParser.usersUniqueViewRanking[4])
         assert(true)
     }
 
