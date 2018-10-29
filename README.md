@@ -16,7 +16,7 @@ Sample CSV:
 >
 > /index.html,04a5d9a7-0a76-47a8-abd3-9e39a1abce50,2017-09-28T19:38:59+00:00
 
-This program is written in Kotlin (JVM) and built using Maven. [Packaging & Running] instructions below
+This program is written in Kotlin (JVM) and built using Maven. [Running] instructions below
 
 Running
 ------------
